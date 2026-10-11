@@ -1,0 +1,104 @@
+/* Original, responsive styling layered over Bootstrap */
+:root {
+    --leaf:#316a54;
+    --cream:#fffaf0;
+    --ink:#203c31;
+    --sun:#f6d98b
+}
+body {
+    font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
+    background:var(--cream);
+    color:var(--ink)
+}
+.navbar-brand {
+    color:var(--leaf)!important
+}
+.nav-link {
+    font-weight:550
+}
+.btn-success {
+    background:var(--leaf);
+    border-color:var(--leaf)
+}
+.btn-success:hover {
+    background:#24503f;
+    border-color:#24503f
+}
+.hero {
+    background:linear-gradient(110deg,#e2f2df,#fff6da);
+    padding:5rem 0
+}
+.hero h1 {
+    font-size:clamp(2.5rem,5vw,4.8rem);
+    font-weight:800;
+    line-height:1.12
+}
+.eyebrow {
+    text-transform:uppercase;
+    letter-spacing:.13em;
+    color:var(--leaf);
+    font-weight:800;
+    font-size:.85rem
+}
+.feature-card {
+    border:0;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 28px #244b3014;
+    height:100%
+}
+.feature-card img {
+    width:100%;
+    height:225px;
+    object-fit:cover
+}
+.feature-card .card-body {
+    padding:1.6rem
+}
+.section {
+    padding:4rem 0
+}
+.pill {
+    display:inline-block;
+    background:#d7eadd;
+    border-radius:50px;
+    padding:.5rem 1rem;
+    font-weight:600
+}
+.site-footer {
+    background:#244e3e;
+    color:#f7f8ef
+}
+.site-footer a {
+    color:#f7f8ef
+}
+.form-panel {
+    background:white;
+    border-radius:20px;
+    padding:2rem;
+    box-shadow:0 10px 24px #244b3012
+}
+.table-wrap {
+    overflow-x:auto
+}
+.hero-illustration {
+    max-width:100%;
+    border-radius:30px;
+    box-shadow:0 15px 35px #21472a22
+}
+.small-note {
+    font-size:.9rem;
+    color:#59695f
+}
+a:focus-visible,button:focus-visible {
+    outline:3px solid #c1851b;
+    outline-offset:3px
+}
+@media(max-width:768px) {
+    .hero {
+        padding:3rem 0
+    }
+    .section {
+        padding:2.5rem 0
+    }
+}
