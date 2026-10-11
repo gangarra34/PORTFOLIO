@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__.'/functions.php';
 $title = $title ?? 'Little Blossoms Childcare';
-$base = '/little-blossoms';
+$base = '/PORTFOLIO/PROJECTS/CHILDCARE/little-blossoms';
 // Navigation is populated from the database, filtered by the current role.
 $nav = $pdo->prepare('SELECT label, path FROM page WHERE access_level IN (\'public\', ?) AND show_nav=1 ORDER BY sort_order, id');
 $nav->execute([role()]);
